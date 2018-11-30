@@ -1,0 +1,29 @@
+.footer {
+  @include flexbox();
+  @include justify-content(center);
+
+  background-color: $color-red-damark;
+  padding: 1.9rem 0;
+  width: 100%;
+
+  @include respond(nex-7) {
+    padding: 4rem 0;  
+  }
+
+  &__texts {
+    @include flexbox();
+    @include align-items(center);
+  }
+
+  &__copyright {
+    height: $copyright-size;
+    margin: 0 0.5rem 0 0.5rem;
+    width: $copyright-size;
+
+    @include respond(nex-7) {
+      height: $copyright-size-big;
+      margin: 0 1rem 0 1rem; 
+      width: $copyright-size-big; 
+    }
+  }
+}

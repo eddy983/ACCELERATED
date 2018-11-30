@@ -1,0 +1,24 @@
+.overview {
+  @include flexbox();
+  @include land-padding; 
+
+  margin: 8% 0;  
+  
+  @include respond(tab-land) {
+    margin: 8% 0 16% 0;
+  }
+
+  @include respond(f-hxd) {
+    margin: 8% 0 30% 0; 
+  }
+
+  @include respond(tab-port) {
+    margin: 8% 0 16% 0;
+  }
+
+  @include respond(mic-l) {
+    margin: 10% 0;     
+  }
+
+
+}

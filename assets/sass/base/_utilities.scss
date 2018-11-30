@@ -1,0 +1,60 @@
+.land-margin {
+  margin-top: 1.5%;
+
+  @include respond(mic-l) {
+    margin-top: 2.5%;
+  }
+
+  @include respond(nex-7) {
+    margin-top: 5.5%;  
+  }
+}
+
+.header-margin {
+  margin-top: 0.8%;
+
+  @include respond(nex-4) {
+    margin-top: 2%; 
+  }
+}
+
+.instruct-margin {
+  @include respond(mic-l) {
+    margin-top: 4%;   
+  }
+}
+
+.auto-margin {
+  margin-left: auto;
+}
+
+.tab-margin {
+  margin-left: 12px; 
+}
+
+.review-margin {
+  margin-top: 1%;  
+}
+
+.review-margin2 {
+  margin-top: 2%;   
+}
+
+.test-header-margin {
+  margin-bottom: 1%;
+}
+
+.test-title-margin {
+  margin-bottom: 2%; 
+}
+
+.bold {
+  font-size: 1.5rem;  
+  font-weight: 600;  
+}
+
+.bold2 {
+  font-size: 1.4rem;  
+  font-weight: 600;    
+}
+

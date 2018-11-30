@@ -1,0 +1,198 @@
+body {
+  color: $color-grey-dark;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  letter-spacing: 0.03em;
+  line-height: 2.8rem;
+}
+
+.header-font {
+  font-size: $font-small;
+  line-height: 2.3rem;
+
+  @include respond(mic-l) {
+    font-size: 2.4rem;
+  }
+
+  @include respond(mic-l) {
+    font-size: 3.4rem;
+    line-height: 5.3rem;
+  }
+
+  @include respond(s-phone) {
+    font-size: 3rem;
+    line-height: 5.3rem;
+  }
+
+  &-title {
+    color: $color-red-damark;
+    font-family: "Righteous";
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 4.2rem;
+
+    @include respond(mic-l) {
+      font-size: 3.8rem;
+      line-height: 6.2rem;
+    }
+
+    @include respond(nex-7) {
+      font-size: 4.8rem;
+      line-height: 7.2rem;
+    }
+
+    @include respond(s-phone) {
+      font-size: 3.5rem;
+      line-height: 6rem;
+    }
+  }
+
+  &-sub {
+    color: $color-grey;
+    font-size: 1.2rem;
+    line-height: 2rem;
+
+    @include respond(mic-l) {
+      font-size: 2.2rem;
+      line-height: 3.8rem;
+    }
+
+    @include respond(nex-7) {
+      font-size: 3.8rem;
+      line-height: 5.8rem;
+    }
+
+    @include respond(s-phone) {
+      font-size: 2.8rem;
+      line-height: 5.5rem;
+    }
+  }
+}
+
+.about-font {
+  @include respond(mic-l) {
+    font-size: 2.6rem;
+    line-height: 4.8rem;
+  }
+
+  @include respond(nex-7) {
+    font-size: 4.6rem;
+    line-height: 7.8rem;
+  }
+
+  @include respond(nex-4) {
+    font-size: 4rem;
+    line-height: 6.8rem;
+  }
+
+  @include respond(s-phone) {
+    font-size: 3.5rem;
+    line-height: 6rem;
+  }
+
+  &-title {
+    font-size: 2rem;
+
+    @include respond(mic-l) {
+      font-size: 3.5rem;
+      text-align: center;
+    }
+
+    @include respond(nex-7) {
+      font-size: 5.5rem;
+    }
+
+    @include respond(s-phone) {
+      font-size: 4.5rem;
+    }
+  }
+}
+
+.accordion-font {
+  color: rgba(71, 184, 224, 0.76);
+  font-size: $font-small;
+
+  @include respond(mic-l) {
+    font-size: 2.4rem;
+  }
+
+  @include respond(nex-7) {
+    font-size: 3.2rem;
+  }
+
+  @include respond(nex-4) {
+    font-size: 2.8rem;
+  }
+
+  @include respond(s-phone) {
+    font-size: 2.4rem;
+  }
+}
+
+.tab-font {
+  font-size: 1.2rem;
+  line-height: 2rem;
+
+  &--title {
+    color: $color-blue-dark;
+    font-weight: bold;
+  }
+}
+
+.review-font {
+  font-size: $font-small;
+     
+
+  &-header {
+    color: $color-grey2;
+    text-transform: uppercase;     
+  }
+
+  &-title {
+    font-size: 1.8rem; 
+    text-transform: capitalize; 
+  }
+
+  &-sub {
+    font-weight: 600;
+    text-transform: capitalize; 
+  }
+}
+
+.test-font {
+  font-size: $font-small;
+
+  &-header {
+    color: $color-grey2;
+  }
+
+  &-title {
+    font-size: 2rem;
+    font-weight: bold; 
+  }
+}
+
+.answer-font {
+  color: #27AE60; 
+}
+
+.footer-font {
+  color: $color-white;
+
+  @include respond(nex-7) {
+    font-size: 2.6rem;
+  }
+
+  @include respond(nex-4) {
+    font-size: 2.4rem;
+  }
+
+  @include respond(m-phone) {
+    font-size: 2.2rem;
+  }
+
+  @include respond(s-phone) {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,87 @@
+.about {
+  @include flexbox();
+  @include land-padding;
+
+  margin-top: 7%;    
+
+  @include respond(mic-l) {
+    @include flex-column;
+    margin-top: 10%;
+  }
+
+  @include respond(nex-7) {
+    margin-top: 18%; 
+  }
+
+  &__texts {
+    width: 55%;
+
+    @include respond(mic-l) {
+      width: 100%;
+    }
+  }
+
+  &__instruct {
+    margin-left: 5%;  
+    width: 40%;  
+
+    @include respond(mic-l) {
+      margin: 10% 0 0 0;
+      width: 100%;
+    }
+
+    @include respond(nex-7) {
+      margin: 18% 0 0 0;
+    }
+  }
+
+  &__instructors {
+    @include flexbox();
+
+    margin-top: 1.5%; 
+
+    @include respond(mic-l) {
+      @include justify-content(space-around);
+
+      margin-top: 8.5%;
+    }
+
+    @include respond(nex-7) {
+      @include flex-column;
+    }
+  }
+
+  &__instructor {
+    @include align-items(center);
+    @include flexbox();
+    @include flex-column;
+
+    margin-right: 7%; 
+
+    @include respond(nex-7) {
+      margin: 0 0 5% 0;
+      width: 100%;
+    }
+
+
+
+    &__img {
+      border-radius: 50px;
+      height: $pic-size;  
+      object-fit: cover;  
+      width: $pic-size;
+      
+      @include respond(mic-l) {
+        border-radius: 50%;
+        height: $pic-size-big;
+        width: $pic-size-big;
+      }
+
+      @include respond(mic-l) {
+        height: $pic-size-bigger;
+        width: $pic-size-bigger;  
+      }
+    }
+  }
+
+}

@@ -1,0 +1,20 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-file" viewBox="0 0 32 32">
+<title>file</title>
+<path d="M11 15h1v-1h-1v1zM11 18h1v-1h-1v1zM11 12h1v-1h-1v1zM11 21h1v-1h-1v1zM11 24h1v-1h-1v1zM13 18h8v-1h-8v1zM13 12h8v-1h-8v1zM20.938 4h-13.938v24h18v-20l-4.062-4zM23 25.938h-14v-19.938h10v2.938h4v17zM13 21h8v-1h-8v1zM13 15h8v-1h-8v1zM13 24h8v-1h-8v1z"></path>
+</symbol>
+<symbol id="icon-document" viewBox="0 0 20 20">
+<title>document</title>
+<path d="M4 18h12v-12h-4v-4h-8v16zM2 19v-19h12l4 4v16h-16v-1z"></path>
+</symbol>
+<symbol id="icon-play" viewBox="0 0 20 20">
+<title>play</title>
+<path d="M4 4l12 6-12 6z"></path>
+</symbol>
+<symbol id="icon-document-alt-fill" viewBox="0 0 24 32">
+<title>document-alt-fill</title>
+<path d="M14 0h-14v32h24v-22.002l-10-9.998zM11.918 12v-8l8 8h-8z"></path>
+</symbol>
+</defs>
+</svg>
