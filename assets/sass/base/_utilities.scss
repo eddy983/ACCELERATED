@@ -1,3 +1,10 @@
+//? Alignments 
+.center-text {
+  text-align: center;
+}
+
+//? Margins
+
 .land-margin {
   margin-top: 1.5%;
 
@@ -40,6 +47,10 @@
   margin-top: 2%;   
 }
 
+.review-margin3 {
+  margin-top: 6%;         
+}
+
 .test-header-margin {
   margin-bottom: 1%;
 }
@@ -47,6 +58,16 @@
 .test-title-margin {
   margin-bottom: 2%; 
 }
+
+.congrats-margin {
+  margin-top: 5%;
+}
+
+.congrats-margin2 {
+  margin: 6% 0 8% 0; 
+}
+
+//? Font Weights
 
 .bold {
   font-size: 1.5rem;  
@@ -58,3 +79,12 @@
   font-weight: 600;    
 }
 
+//? Background colors
+.purple-bg {
+  background-color: $color-purple;
+}
+
+//? widths
+.tab-width {
+  width: 80%;    
+}

@@ -183,17 +183,32 @@ body {
   .review-font-sub {
     font-weight: 600;
     text-transform: capitalize; }
+  .review-font-end {
+    font-size: 1.8rem;
+    font-weight: bold; }
 
 .test-font {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  text-align: left;
+  line-height: 2.2rem; }
   .test-font-header {
-    color: #4F4F4F; }
+    color: #4F4F4F;
+    line-height: normal; }
   .test-font-title {
     font-size: 2rem;
-    font-weight: bold; }
+    font-weight: bold;
+    line-height: normal; }
 
 .answer-font {
   color: #27AE60; }
+
+.congrats-font {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold; }
+  .congrats-font-title {
+    font-size: 2.4rem;
+    font-weight: normal; }
 
 .footer-font {
   color: #fff; }
@@ -209,6 +224,9 @@ body {
   @media (max-width: 20em) {
     .footer-font {
       font-size: 2rem; } }
+
+.center-text {
+  text-align: center; }
 
 .land-margin {
   margin-top: 1.5%; }
@@ -241,11 +259,20 @@ body {
 .review-margin2 {
   margin-top: 2%; }
 
+.review-margin3 {
+  margin-top: 6%; }
+
 .test-header-margin {
   margin-bottom: 1%; }
 
 .test-title-margin {
   margin-bottom: 2%; }
+
+.congrats-margin {
+  margin-top: 5%; }
+
+.congrats-margin2 {
+  margin: 6% 0 8% 0; }
 
 .bold {
   font-size: 1.5rem;
@@ -254,6 +281,12 @@ body {
 .bold2 {
   font-size: 1.4rem;
   font-weight: 600; }
+
+.purple-bg {
+  background-color: #34314C; }
+
+.tab-width {
+  width: 80%; }
 
 .about {
   display: -webkit-box;
@@ -1095,19 +1128,25 @@ body {
         .tabs__contents__test__tab:hover {
           background-color: rgba(71, 184, 224, 0.08);
           cursor: pointer; }
-
-.z {
-  bottom: 4.8rem;
-  left: 4.8rem;
-  position: absolute;
-  transform: translate(0%, 0%); }
+      .tabs__contents__test__answer {
+        bottom: 4.8rem;
+        left: 4.8rem;
+        position: absolute;
+        transform: translate(0%, 0%);
+        width: 70%; }
+      .tabs__contents__test__medal {
+        display: block;
+        height: 14.8rem;
+        margin: auto; }
 
 .active ~ .tabs__nav__link {
   color: #fff; }
 
-#q-2,
-#q-3 {
+[id^="q-"] {
   display: none; }
+
+[id^="tab-"] {
+  width: 100%; }
 
 @keyframes red-flash {
   from {

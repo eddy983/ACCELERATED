@@ -158,23 +158,43 @@ body {
     font-weight: 600;
     text-transform: capitalize; 
   }
+
+  &-end {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
 }
 
 .test-font {
   font-size: $font-small;
+  text-align: left;   
+  line-height: 2.2rem; 
 
   &-header {
     color: $color-grey2;
+    line-height: normal;
   }
 
   &-title {
     font-size: 2rem;
     font-weight: bold; 
+    line-height: normal; 
   }
 }
 
 .answer-font {
   color: #27AE60; 
+}
+
+.congrats-font {
+  color: $color-white;
+  font-size: 1.8rem;
+  font-weight: bold;
+
+  &-title {
+    font-size: 2.4rem;
+    font-weight: normal;
+  }
 }
 
 .footer-font {
