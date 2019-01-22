@@ -1,4 +1,4 @@
-//? Alignments 
+//? Alignments
 .center-text {
   text-align: center;
 }
@@ -13,7 +13,7 @@
   }
 
   @include respond(nex-7) {
-    margin-top: 5.5%;  
+    margin-top: 5.5%;
   }
 }
 
@@ -21,13 +21,13 @@
   margin-top: 0.8%;
 
   @include respond(nex-4) {
-    margin-top: 2%; 
+    margin-top: 2%;
   }
 }
 
 .instruct-margin {
   @include respond(mic-l) {
-    margin-top: 4%;   
+    margin-top: 4%;
   }
 }
 
@@ -36,27 +36,47 @@
 }
 
 .tab-margin {
-  margin-left: 12px; 
+  margin-left: 12px;
 }
 
 .review-margin {
-  margin-top: 1%;  
+  margin-top: 1%;
+
+  @include respond(nex-7) {
+    margin-top: 3%;
+  }
 }
 
 .review-margin2 {
-  margin-top: 2%;   
+  margin-top: 2%;
+
+  @include respond(nex-7) {
+    margin-top: 4%;
+  }
 }
 
 .review-margin3 {
-  margin-top: 6%;         
+  margin-top: 6%;
+
+  @include respond(nex-7) {
+    margin-top: 8%;
+  }
 }
 
 .test-header-margin {
-  margin-bottom: 1%;
+  margin-bottom: 1%;  
+  
+  @include respond(nex-7) {
+    margin-bottom: 3%;    
+  }
 }
 
 .test-title-margin {
-  margin-bottom: 2%; 
+  margin-bottom: 2%;
+
+  @include respond(nex-7) {
+    margin-bottom: 4%;       
+  }
 }
 
 .congrats-margin {
@@ -64,19 +84,35 @@
 }
 
 .congrats-margin2 {
-  margin: 6% 0 8% 0; 
+  margin: 6% 0 8% 0;
 }
 
 //? Font Weights
 
 .bold {
-  font-size: 1.5rem;  
-  font-weight: 600;  
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  @include respond(tab-land) {
+    font-size: $font-medium2;
+  }
+
+  @include respond(nex-7) {
+    font-size: 3rem;
+  } 
 }
 
 .bold2 {
-  font-size: 1.4rem;  
-  font-weight: 600;    
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  @include respond(tab-land) {
+    font-size: $font-medium2;
+  }
+
+  @include respond(nex-7) {
+    font-size: 3rem;
+  }
 }
 
 //? Background colors
@@ -86,5 +122,5 @@
 
 //? widths
 .tab-width {
-  width: 80%;    
+  width: 80%;
 }

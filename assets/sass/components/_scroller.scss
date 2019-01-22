@@ -6,6 +6,10 @@
 .scrollable2 {
   height: 85vh; 
   overflow-y: scroll;
+
+  @include respond(nex-7) {
+    height: 100vh;  
+  }
 }
 
 #scroller::-webkit-scrollbar-track {
@@ -29,17 +33,29 @@
 {
   border: .75px solid $color-blue-dark;  
   border-radius: 10px;    
-	background-color: $color-white; 
+  background-color: $color-white; 
+  
+  @include respond(nex-7) {
+    display: none;
+  }
 }
   
 #scroller2::-webkit-scrollbar
 {
 	width: 8px;
-	background-color: $color-white;  
+  background-color: $color-white;  
+  
+  @include respond(nex-7) {
+    display: none;
+  }
 }
 
 #scroller2::-webkit-scrollbar-thumb
 {
   background-color: $color-blue-dark;	  
-  border-radius: 10px;          
+  border-radius: 10px;     
+  
+  @include respond(nex-7) {
+    display: none;  
+  }
 }          

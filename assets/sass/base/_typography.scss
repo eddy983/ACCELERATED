@@ -12,7 +12,7 @@ body {
   line-height: 2.3rem;
 
   @include respond(mic-l) {
-    font-size: 2.4rem;
+    font-size: $font-medium2;
   }
 
   @include respond(mic-l) {
@@ -71,6 +71,8 @@ body {
 }
 
 .about-font {
+  text-align: center;
+
   @include respond(mic-l) {
     font-size: 2.6rem;
     line-height: 4.8rem;
@@ -92,7 +94,7 @@ body {
   }
 
   &-title {
-    font-size: 2rem;
+    font-size: $font-medium;
 
     @include respond(mic-l) {
       font-size: 3.5rem;
@@ -114,7 +116,7 @@ body {
   font-size: $font-small;
 
   @include respond(mic-l) {
-    font-size: 2.4rem;
+    font-size: $font-medium2;
   }
 
   @include respond(nex-7) {
@@ -126,13 +128,22 @@ body {
   }
 
   @include respond(s-phone) {
-    font-size: 2.4rem;
+    font-size: $font-medium2;
   }
 }
 
 .tab-font {
   font-size: 1.2rem;
   line-height: 2rem;
+
+  @include respond(tab-land) {
+    font-size: 2.2rem;
+  }
+
+  @include respond(nex-7) {
+    font-size: 3rem;
+    line-height: 1.4;
+  }
 
   &--title {
     color: $color-blue-dark;
@@ -142,33 +153,68 @@ body {
 
 .review-font {
   font-size: $font-small;
-     
+
+  @include respond(tab-land) {
+    font-size: $font-medium2;
+    line-height: 4.7rem;
+  }
+
+  @include respond(nex-7) {
+    font-size: 3rem;
+    line-height: 5.4rem;
+  }
 
   &-header {
     color: $color-grey2;
-    text-transform: uppercase;     
+    text-transform: uppercase;
   }
 
   &-title {
-    font-size: 1.8rem; 
-    text-transform: capitalize; 
+    font-size: 1.8rem;
+    text-transform: capitalize;
+
+    @include respond(tab-land) {
+      font-size: 2.8rem;
+      line-height: 1.4;
+    }
+
+    @include respond(nex-7) {
+      font-size: 3.2rem;  
+    }
   }
 
   &-sub {
     font-weight: 600;
-    text-transform: capitalize; 
+    text-transform: capitalize;
   }
 
   &-end {
     font-size: 1.8rem;
     font-weight: bold;
+
+    @include respond(tab-land) {
+      font-size: $font-medium2;
+    }
+
+    @include respond(nex-7) {
+      font-size: 3rem;
+    }
   }
 }
 
 .test-font {
   font-size: $font-small;
-  text-align: left;   
-  line-height: 2.2rem; 
+  text-align: left;
+  line-height: 2.2rem;
+
+  @include respond(tab-land) {
+    font-size: $font-medium;
+  }
+
+  @include respond(nex-7) {
+    font-size: 2.6rem;
+    line-height: 1.4;
+  }
 
   &-header {
     color: $color-grey2;
@@ -176,14 +222,30 @@ body {
   }
 
   &-title {
-    font-size: 2rem;
-    font-weight: bold; 
-    line-height: normal; 
+    font-size: $font-medium;
+    font-weight: bold;
+    line-height: normal;
+
+    @include respond(tab-land) {
+      font-size: 3rem;
+    }
+
+    @include respond(tab-land) {
+      font-size: 3.4rem;
+    }
   }
 }
 
 .answer-font {
-  color: #27AE60; 
+  color: #27ae60;
+
+  @include respond(tab-land) {
+    font-size: $font-medium;
+  }
+
+  @include respond(nex-7) {
+    font-size: 3rem;
+  }
 }
 
 .congrats-font {
@@ -192,8 +254,20 @@ body {
   font-weight: bold;
 
   &-title {
-    font-size: 2.4rem;
+    font-size: $font-medium2;
     font-weight: normal;
+  }
+}
+
+.home-font {
+  font-size: $font-medium;
+
+  @include respond(tab-land) {
+    font-size: 3.8rem;
+  }
+
+  @include respond(nex-7) {
+    font-size: 5.8rem;
   }
 }
 
@@ -205,7 +279,7 @@ body {
   }
 
   @include respond(nex-4) {
-    font-size: 2.4rem;
+    font-size: $font-medium2;
   }
 
   @include respond(m-phone) {
@@ -213,6 +287,6 @@ body {
   }
 
   @include respond(s-phone) {
-    font-size: 2rem;
+    font-size: $font-medium;
   }
 }

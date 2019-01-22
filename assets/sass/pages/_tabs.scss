@@ -24,19 +24,10 @@
     @include align-items(center);
     @include flexbox();
 
-    // border: 0.25px solid $color-grey-light;
     color: $color-grey-dark;
     text-decoration: none;
     padding: 1.2rem;
-    // background: #57cac9;
-    // background: -webkit-linear-gradient(top, #444, #333);
-    // background: -moz-linear-gradient(top, #444, #333);
     border-bottom: 0.25px solid $color-grey-light;
-
-    // &:last-child {
-    //   margin-bottom: 0px;
-    //   border-bottom: 0px;
-    // }
   }
 
   &__icon {
@@ -95,6 +86,10 @@ $activeForeground: $background;
     width: 32%;
     z-index: 1;
 
+    @include respond(tab-land) {
+      width: 0;
+    }
+
     &__item {
       font-size: 1.4rem;
       line-height: 2rem;
@@ -102,12 +97,101 @@ $activeForeground: $background;
       cursor: pointer;
 
       &.active {
+        color: #fff;
         background: $color-blue-dark;
         font-weight: 600;
-        &::backdrop {
-          color: #fff;
+      }
+
+      &--1 {
+        cursor: initial;
+
+        &.active {
+          background: transparent;
         }
       }
+
+      &--2 {
+        height: fit-content;
+        left: 2.4rem;
+        position: absolute;
+        top: 5.4rem;
+        z-index: 2;
+
+        @include respond(tab-land) {
+          top: 10.2rem;    
+        }
+
+        @include respond(mic-l) {
+          top: 5.2rem;       
+        }
+      }
+
+      &__checkbox {
+        display: none;
+      }
+
+      &__button {
+        text-align: center;
+      }
+
+      &__icon {
+        position: relative;
+
+        &,
+        &::before,
+        &::after {
+          background-color: $color-grey-light;
+          border: 0.5px solid rgba(31, 145, 185, 0.5);
+          border-radius: 4px;
+          cursor: pointer;
+          display: inline-block;
+          height: 4px;
+          width: 4rem;
+
+          @include respond(tab-land) {
+            height: 8px;
+            width: 10rem;
+          }
+        }
+
+        &::before,
+        &::after {
+          content: "";
+          left: 0;
+          position: absolute;
+          transition: all 0.3s;
+        }
+
+        &::before {
+          top: -1rem;
+
+          @include respond(tab-land) {
+            top: -2rem;
+          }
+        }
+        &::after {
+          top: 1rem;
+
+          @include respond(tab-land) {
+            top: 2rem;  
+          }
+        }
+      }
+
+      // &__checkbox:checked + &__button &__icon {
+      //   background-color: transparent;
+      //   border: 0.5px solid transparent;
+      // }
+
+      // &__checkbox:checked + &__button &__icon::before {
+      //   top: 0;
+      //   transform: rotate(135deg);
+      // }
+
+      // &__checkbox:checked + &__button &__icon::after {
+      //   top: 0;
+      //   transform: rotate(-135deg);
+      // }
     }
 
     &__link {
@@ -118,6 +202,10 @@ $activeForeground: $background;
       color: $color-grey-dark;
       text-decoration: none;
       padding: 1.2rem;
+
+      @include respond(tab-land) {
+        padding: 3rem 2.2rem;
+      }
 
       &--title {
         background-color: rgba(71, 184, 224, 0.08);
@@ -131,16 +219,33 @@ $activeForeground: $background;
       height: $icon-size;
       width: $icon-size;
 
+      @include respond(tab-land) {
+        height: $icon-size2;
+        width: $icon-size2;
+      }
+
       &--1 {
         padding: 1px 1px 1px 2.5px;
+
+        @include respond(tab-land) {
+          padding: 2px 2px 2px 4.5px; 
+        }
       }
 
       &--2 {
         padding: 3px 2px;
+
+        @include respond(tab-land) {
+          padding: 5px 6px;    
+        }
       }
 
       &--3 {
         padding: 1.5px 2px;
+
+        @include respond(tab-land) {
+          padding: 3.5px 4px;
+        }
       }
     }
   }
@@ -152,6 +257,10 @@ $activeForeground: $background;
 
     width: 68%;
 
+    @include respond(tab-land) {
+      width: 100%;
+    }
+
     &__video {
       @include align-items(center);
       @include flexbox();
@@ -162,16 +271,24 @@ $activeForeground: $background;
           rgba(0, 0, 0, 0.32),
           rgba(0, 0, 0, 0.32)
         ),
-        url(../../../assets/img/Talking.jpg);
+        url(../../../assets/img/Talking.jpg);        
       background-size: cover;
       background-repeat: no-repeat;
       height: 46rem;
-      width: 68vw;
+      width: 100%;
+
+      &--1 {
+        background-image: none;   
+      }
+
+      @include respond(tab-land) {
+        height: 60rem;
+      }
     }
 
     &__review {
       @include lesson-body;
-      padding: 3.8rem;        
+      padding: 3.8rem;
 
       &__list {
         &__items {
@@ -196,20 +313,28 @@ $activeForeground: $background;
         @include flexbox();
         @include flex-column;
 
-        background-color: transparent;  
+        background-color: transparent;
         border: 0.5px solid #1f91b9;
         border-radius: 4px;
-        outline: 0; 
+        outline: 0;
         padding: 1.8rem 2rem;
-        width: 100%;    
+        width: 100%;
+
+        @include respond(tab-land) {
+          padding: 2.8rem 2rem;
+        }
 
         &:not(:last-child) {
-          margin-bottom: 2%;  
+          margin-bottom: 2%;
+
+          @include respond(nex-7) {
+            margin-bottom: 4%;   
+          }
         }
 
         &:hover {
-          background-color: rgba(71, 184, 224, 0.08);  
-          cursor: pointer;     
+          background-color: rgba(71, 184, 224, 0.08);
+          cursor: pointer;
         }
       }
 
@@ -217,47 +342,108 @@ $activeForeground: $background;
         bottom: 4.8rem;
         left: 4.8rem;
         position: absolute;
-        transform: translate(-0%, -0%);    
-        width: 70%;       
+        transform: translate(-0%, -0%);
+        width: 74%;
+
+        @include respond(nex-7) {
+          position: initial;    
+        }
       }
 
       &__medal {
         display: block;
         height: 14.8rem;
-        margin: auto;  
+        margin: auto;
       }
     }
   }
 }
 
+.tabs__nav__item__checkbox:checked ~ .tabs__nav {
+  width: 0;
+}
+
+.close {
+  animation: slide-out 0.3s ease-in-out normal forwards;
+}
+
+.open {
+  animation: slide-in 0.3s ease-in-out normal;
+
+  @include respond(tab-land) {
+    width: 100%;
+  }
+}
+
+.video-closed {
+  padding: 0 8%;
+  width: 100%;
+
+  @include respond(tab-land) {
+    padding: 0%;
+  }
+}
+
+.video-open {
+  @include respond(tab-land) {
+    width: 0;
+  }
+}
 
 .active ~ .tabs__nav__link {
   color: #fff;
 }
- 
 
 [id^="q-"] {
   display: none;
 }
+
 [id^="tab-"] {
-  width: 100%; 
+  width: 100%;
 }
 
-
-@keyframes red-flash {  
-  from { border: 0.5px solid rgba($color-red, 0); color: $color-red;} 
-  to { border: 0.5px solid rgba($color-red, 1); background-color: rgba($color-red, 0.08); color: $color-red; }
+@keyframes red-flash {
+  from {
+    border: 0.5px solid rgba($color-red, 0);
+    color: $color-red;
+  }
+  to {
+    border: 0.5px solid rgba($color-red, 1);
+    background-color: rgba($color-red, 0.08);
+    color: $color-red;
+  }
 }
 
-@keyframes green-flash {  
-  from { border: 0.5px solid rgba($color-green, 0); color: $color-green;} 
-  to { border: 0.5px solid rgba($color-green, 1); background-color: rgba($color-green, 0.08); color: $color-green; }
+@keyframes green-flash {
+  from {
+    border: 0.5px solid rgba($color-green, 0);
+    color: $color-green;
+  }
+  to {
+    border: 0.5px solid rgba($color-green, 1);
+    background-color: rgba($color-green, 0.08);
+    color: $color-green;
+  }
 }
 
+@keyframes slide-out {
+  from {
+    transform: translateX(0%);
+    width: 100%;
+  }
+  to {
+    transform: translateX(-110%);
+    width: 0%;
+  }
+}
 
-
-
-
-
-
-
+@keyframes slide-in {
+  from {
+    transform: translateX(-110%);
+    width: 0%;
+  }
+  to {
+    transform: translateX(0%);
+    width: 32%;
+  }
+}

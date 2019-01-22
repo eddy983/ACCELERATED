@@ -24,7 +24,29 @@
   <body>
     <section class="vertical_tab">
       <div id="vertical-tabs" class="tabs">
-        <ul class="tabs__nav scrollable" id="scroller">
+        <div class="tabs__nav__item tabs__nav__item--2" id="menu">
+          <input
+            type="checkbox"
+            class="tabs__nav__item__checkbox"
+            id="navi-toggle"
+          />
+          <label for="navi-toggle" class="tabs__nav__item__button">
+            <span class="tabs__nav__item__icon">&nbsp;</span>
+          </label>
+        </div>
+        <ul
+          onscroll="myFunction(this)"
+          class="tabs__nav scrollable"
+          id="scroller"
+        >
+          <li class="tabs__nav__item tabs__nav__item--1">
+            <button
+              class="btn btn__home"
+              onclick="window.location.href='index.html'"
+            >
+              <span class="home-font">&#8678;</span> Home
+            </button>
+          </li>
           <li class="tabs__nav__item">
             <a href="#" class="tabs__nav__link tabs__nav__link--title">
               <p class="tab-font tab-font--title">
@@ -37,8 +59,10 @@
               <svg class="tabs__nav__icon tabs__nav__icon--1">
                 <use xlink:href="assets/img/sprite.svg#icon-play"></use>
               </svg>
-              <p class="tab-margin tab-width">1: Discovery of oil in nigeria</p>
-              <p class="auto-margin">00:00</p>
+              <p class="tab-font tab-margin tab-width">
+                1: Discovery of oil in nigeria
+              </p>
+              <p class="tab-font auto-margin">00:00</p>
             </a>
           </li>
           <li data-tab="tab-2" class="tabs__nav__item">
@@ -48,7 +72,7 @@
                   xlink:href="assets/img/sprite.svg#icon-document-alt-fill"
                 ></use>
               </svg>
-              <p class="tab-margin tab-width">Review</p>
+              <p class="tab-font tab-margin tab-width">Review</p>
             </a>
           </li>
           <li data-tab="tab-3" class="tabs__nav__item">
@@ -56,7 +80,7 @@
               <svg class="tabs__nav__icon tabs__nav__icon--3">
                 <use xlink:href="assets/img/sprite.svg#icon-file"></use>
               </svg>
-              <p class="tab-margin tab-width">Asssessment I</p>
+              <p class="tab-font tab-margin tab-width">Asssessment I</p>
             </a>
           </li>
           <li data-tab="tab-4" class="tabs__nav__item">
@@ -64,10 +88,10 @@
               <svg class="tabs__nav__icon tabs__nav__icon--1">
                 <use xlink:href="assets/img/sprite.svg#icon-play"></use>
               </svg>
-              <p class="tab-margin tab-width">
+              <p class="tab-font tab-margin tab-width">
                 2: Introdcution to upstream ,midstream and downstream sector
               </p>
-              <p class="auto-margin">00:00</p>
+              <p class="tab-font auto-margin">00:00</p>
             </a>
           </li>
           <li data-tab="tab-5" class="tabs__nav__item">
@@ -77,7 +101,7 @@
                   xlink:href="assets/img/sprite.svg#icon-document-alt-fill"
                 ></use>
               </svg>
-              <p class="tab-margin tab-width">Review</p>
+              <p class="tab-font tab-margin tab-width">Review</p>
             </a>
           </li>
           <li data-tab="tab-6" class="tabs__nav__item">
@@ -85,7 +109,7 @@
               <svg class="tabs__nav__icon tabs__nav__icon--3">
                 <use xlink:href="assets/img/sprite.svg#icon-file"></use>
               </svg>
-              <p class="tab-margin tab-width">Asssessment II</p>
+              <p class="tab-font tab-margin tab-width">Asssessment II</p>
             </a>
           </li>
           <li data-tab="tab-7" class="tabs__nav__item">
@@ -93,10 +117,10 @@
               <svg class="tabs__nav__icon tabs__nav__icon--1">
                 <use xlink:href="assets/img/sprite.svg#icon-play"></use>
               </svg>
-              <p class="tab-margin tab-width">
+              <p class="tab-font tab-margin tab-width">
                 3: Types of survey done in prospecting for oil
               </p>
-              <p class="auto-margin">00:00</p>
+              <p class="tab-font auto-margin">00:00</p>
             </a>
           </li>
           <li data-tab="tab-8" class="tabs__nav__item">
@@ -106,7 +130,7 @@
                   xlink:href="assets/img/sprite.svg#icon-document-alt-fill"
                 ></use>
               </svg>
-              <p class="tab-margin tab-width">Review</p>
+              <p class="tab-font tab-margin tab-width">Review</p>
             </a>
           </li>
           <li data-tab="tab-9" class="tabs__nav__item">
@@ -114,7 +138,7 @@
               <svg class="tabs__nav__icon tabs__nav__icon--3">
                 <use xlink:href="assets/img/sprite.svg#icon-file"></use>
               </svg>
-              <p class="tab-margin tab-width">Asssessment III</p>
+              <p class="tab-font tab-margin tab-width">Asssessment III</p>
             </a>
           </li>
           <li data-tab="tab-10" class="tabs__nav__item">
@@ -122,10 +146,10 @@
               <svg class="tabs__nav__icon tabs__nav__icon--1">
                 <use xlink:href="assets/img/sprite.svg#icon-play"></use>
               </svg>
-              <p class="tab-margin tab-width">
+              <p class="tab-font tab-margin tab-width">
                 4: Introduction to licenses involved in the oil and gas industry
               </p>
-              <p class="auto-margin">00:00</p>
+              <p class="tab-font auto-margin">00:00</p>
             </a>
           </li>
           <li data-tab="tab-11" class="tabs__nav__item">
@@ -135,7 +159,7 @@
                   xlink:href="assets/img/sprite.svg#icon-document-alt-fill"
                 ></use>
               </svg>
-              <p class="tab-margin tab-width">Review</p>
+              <p class="tab-font tab-margin tab-width">Review</p>
             </a>
           </li>
           <li data-tab="tab-12" class="tabs__nav__item">
@@ -143,7 +167,7 @@
               <svg class="tabs__nav__icon tabs__nav__icon--3">
                 <use xlink:href="assets/img/sprite.svg#icon-file"></use>
               </svg>
-              <p class="tab-margin tab-width">Asssessment IV</p>
+              <p class="tab-font tab-margin tab-width">Asssessment IV</p>
             </a>
           </li>
           <li class="tabs__nav__item">
@@ -158,8 +182,8 @@
               <svg class="tabs__nav__icon tabs__nav__icon--1">
                 <use xlink:href="assets/img/sprite.svg#icon-play"></use>
               </svg>
-              <p class="tab-margin tab-width">1: Nigeria refineries</p>
-              <p class="auto-margin">00:00</p>
+              <p class="tab-font tab-margin tab-width">1: Nigeria refineries</p>
+              <p class="tab-font auto-margin">00:00</p>
             </a>
           </li>
           <li data-tab="tab-14" class="tabs__nav__item">
@@ -169,7 +193,7 @@
                   xlink:href="assets/img/sprite.svg#icon-document-alt-fill"
                 ></use>
               </svg>
-              <p class="tab-margin tab-width">Review</p>
+              <p class="tab-font tab-margin tab-width">Review</p>
             </a>
           </li>
           <li data-tab="tab-15" class="tabs__nav__item">
@@ -177,7 +201,7 @@
               <svg class="tabs__nav__icon tabs__nav__icon--3">
                 <use xlink:href="assets/img/sprite.svg#icon-file"></use>
               </svg>
-              <p class="tab-margin tab-width">Asssessment I</p>
+              <p class="tab-font tab-margin tab-width">Asssessment I</p>
             </a>
           </li>
           <li data-tab="tab-16" class="tabs__nav__item">
@@ -185,8 +209,10 @@
               <svg class="tabs__nav__icon tabs__nav__icon--1">
                 <use xlink:href="assets/img/sprite.svg#icon-play"></use>
               </svg>
-              <p class="tab-margin tab-width">2: Crude oil contracts</p>
-              <p class="auto-margin">00:00</p>
+              <p class="tab-font tab-margin tab-width">
+                2: Crude oil contracts
+              </p>
+              <p class="tab-font auto-margin">00:00</p>
             </a>
           </li>
           <li data-tab="tab-17" class="tabs__nav__item">
@@ -196,7 +222,7 @@
                   xlink:href="assets/img/sprite.svg#icon-document-alt-fill"
                 ></use>
               </svg>
-              <p class="tab-margin tab-width">Review</p>
+              <p class="tab-font tab-margin tab-width">Review</p>
             </a>
           </li>
           <li data-tab="tab-18" class="tabs__nav__item">
@@ -204,7 +230,7 @@
               <svg class="tabs__nav__icon tabs__nav__icon--3">
                 <use xlink:href="assets/img/sprite.svg#icon-file"></use>
               </svg>
-              <p class="tab-margin tab-width">Asssessment II</p>
+              <p class="tab-font tab-margin tab-width">Asssessment II</p>
             </a>
           </li>
           <li data-tab="tab-19" class="tabs__nav__item">
@@ -212,8 +238,10 @@
               <svg class="tabs__nav__icon tabs__nav__icon--1">
                 <use xlink:href="assets/img/sprite.svg#icon-play"></use>
               </svg>
-              <p class="tab-margin tab-width">3: Remittance of oil revenue</p>
-              <p class="auto-margin">00:00</p>
+              <p class="tab-font tab-margin tab-width">
+                3: Remittance of oil revenue
+              </p>
+              <p class="tab-font auto-margin">00:00</p>
             </a>
           </li>
           <li data-tab="tab-20" class="tabs__nav__item">
@@ -223,7 +251,7 @@
                   xlink:href="assets/img/sprite.svg#icon-document-alt-fill"
                 ></use>
               </svg>
-              <p class="tab-margin tab-width">Review</p>
+              <p class="tab-font tab-margin tab-width">Review</p>
             </a>
           </li>
           <li data-tab="tab-21" class="tabs__nav__item">
@@ -231,7 +259,7 @@
               <svg class="tabs__nav__icon tabs__nav__icon--3">
                 <use xlink:href="assets/img/sprite.svg#icon-file"></use>
               </svg>
-              <p class="tab-margin tab-width">Asssessment III</p>
+              <p class="tab-font tab-margin tab-width">Asssessment III</p>
             </a>
           </li>
           <li class="tabs__nav__item">
@@ -246,8 +274,10 @@
               <svg class="tabs__nav__icon tabs__nav__icon--1">
                 <use xlink:href="assets/img/sprite.svg#icon-play"></use>
               </svg>
-              <p class="tab-margin tab-width">1: Mining industry in nigeria</p>
-              <p class="auto-margin">00:00</p>
+              <p class="tab-font tab-margin tab-width">
+                1: Mining industry in nigeria
+              </p>
+              <p class="tab-font auto-margin">00:00</p>
             </a>
           </li>
           <li data-tab="tab-23" class="tabs__nav__item">
@@ -257,7 +287,7 @@
                   xlink:href="assets/img/sprite.svg#icon-document-alt-fill"
                 ></use>
               </svg>
-              <p class="tab-margin tab-width">Review</p>
+              <p class="tab-font tab-margin tab-width">Review</p>
             </a>
           </li>
           <li data-tab="tab-24" class="tabs__nav__item">
@@ -265,7 +295,7 @@
               <svg class="tabs__nav__icon tabs__nav__icon--3">
                 <use xlink:href="assets/img/sprite.svg#icon-file"></use>
               </svg>
-              <p class="tab-margin tab-width">Asssessment I</p>
+              <p class="tab-font tab-margin tab-width">Asssessment I</p>
             </a>
           </li>
           <li data-tab="tab-25" class="tabs__nav__item">
@@ -273,10 +303,10 @@
               <svg class="tabs__nav__icon tabs__nav__icon--1">
                 <use xlink:href="assets/img/sprite.svg#icon-play"></use>
               </svg>
-              <p class="tab-margin tab-width">
+              <p class="tab-font tab-margin tab-width">
                 2: Procedure for obtaining a mining license
               </p>
-              <p class="auto-margin">00:00</p>
+              <p class="tab-font auto-margin">00:00</p>
             </a>
           </li>
           <li data-tab="tab-26" class="tabs__nav__item">
@@ -286,7 +316,7 @@
                   xlink:href="assets/img/sprite.svg#icon-document-alt-fill"
                 ></use>
               </svg>
-              <p class="tab-margin tab-width">Review</p>
+              <p class="tab-font tab-margin tab-width">Review</p>
             </a>
           </li>
           <li data-tab="tab-27" class="tabs__nav__item">
@@ -294,7 +324,7 @@
               <svg class="tabs__nav__icon tabs__nav__icon--3">
                 <use xlink:href="assets/img/sprite.svg#icon-file"></use>
               </svg>
-              <p class="tab-margin tab-width">Asssessment II</p>
+              <p class="tab-font tab-margin tab-width">Asssessment II</p>
             </a>
           </li>
           <li data-tab="tab-28" class="tabs__nav__item">
@@ -302,10 +332,10 @@
               <svg class="tabs__nav__icon tabs__nav__icon--1">
                 <use xlink:href="assets/img/sprite.svg#icon-play"></use>
               </svg>
-              <p class="tab-margin tab-width">
+              <p class="tab-font tab-margin tab-width">
                 3: Mineral titles and licenses conditions
               </p>
-              <p class="auto-margin">00:00</p>
+              <p class="tab-font auto-margin">00:00</p>
             </a>
           </li>
           <li data-tab="tab-29" class="tabs__nav__item">
@@ -315,7 +345,7 @@
                   xlink:href="assets/img/sprite.svg#icon-document-alt-fill"
                 ></use>
               </svg>
-              <p class="tab-margin tab-width">Review</p>
+              <p class="tab-font tab-margin tab-width">Review</p>
             </a>
           </li>
           <li data-tab="tab-30" class="tabs__nav__item">
@@ -323,7 +353,7 @@
               <svg class="tabs__nav__icon tabs__nav__icon--3">
                 <use xlink:href="assets/img/sprite.svg#icon-file"></use>
               </svg>
-              <p class="tab-margin tab-width">Asssessment III</p>
+              <p class="tab-font tab-margin tab-width">Asssessment III</p>
             </a>
           </li>
           <li data-tab="tab-31" class="tabs__nav__item">
@@ -331,8 +361,8 @@
               <svg class="tabs__nav__icon tabs__nav__icon--1">
                 <use xlink:href="assets/img/sprite.svg#icon-play"></use>
               </svg>
-              <p class="tab-margin tab-width">4: Groups of minerals</p>
-              <p class="auto-margin">00:00</p>
+              <p class="tab-font tab-margin tab-width">4: Groups of minerals</p>
+              <p class="tab-font auto-margin">00:00</p>
             </a>
           </li>
           <li data-tab="tab-32" class="tabs__nav__item">
@@ -342,24 +372,28 @@
                   xlink:href="assets/img/sprite.svg#icon-document-alt-fill"
                 ></use>
               </svg>
-              <p class="tab-margin tab-width">Review</p>
+              <p class="tab-font tab-margin tab-width">Review</p>
             </a>
           </li>
-          <li data-tab="tab-33" class="tabs__nav__item">
-            <a href="#" class="tabs__nav__link">
-              <svg class="tabs__nav__icon tabs__nav__icon--3">
-                <use xlink:href="assets/img/sprite.svg#icon-file"></use>
-              </svg>
-              <p class="tab-margin tab-width">Asssessment IV</p>
-            </a>
-          </li>
+          <!--
+            <li data-tab="tab-33" class="tabs__nav__item">
+              <a href="#" class="tabs__nav__link">
+                <svg class="tabs__nav__icon tabs__nav__icon--3">
+                  <use xlink:href="assets/img/sprite.svg#icon-file"></use>
+                </svg>
+                <p class="tab-font tab-margin tab-width">Asssessment IV</p>
+              </a>
+            </li>
+          -->
           <li data-tab="tab-34" class="tabs__nav__item">
             <a href="#" class="tabs__nav__link">
               <svg class="tabs__nav__icon tabs__nav__icon--1">
                 <use xlink:href="assets/img/sprite.svg#icon-play"></use>
               </svg>
-              <p class="tab-margin tab-width">5: Challenges in the mining industry</p>
-              <p class="auto-margin">00:00</p>
+              <p class="tab-font tab-margin tab-width">
+                5: Challenges in the mining industry
+              </p>
+              <p class="tab-font auto-margin">00:00</p>
             </a>
           </li>
           <li data-tab="tab-35" class="tabs__nav__item">
@@ -369,23 +403,44 @@
                   xlink:href="assets/img/sprite.svg#icon-document-alt-fill"
                 ></use>
               </svg>
-              <p class="tab-margin tab-width">Review</p>
+              <p class="tab-font tab-margin tab-width">Review</p>
             </a>
           </li>
-          <li data-tab="tab-36" class="tabs__nav__item">
+          <!--
+            <li data-tab="tab-36" class="tabs__nav__item">
+              <a href="#" class="tabs__nav__link">
+                <svg class="tabs__nav__icon tabs__nav__icon--3">
+                  <use xlink:href="assets/img/sprite.svg#icon-file"></use>
+                </svg>
+                <p class="tab-font tab-margin tab-width">Asssessment V</p>
+              </a>
+            </li>
+          -->
+          <li data-tab="tab-37" class="tabs__nav__item">
             <a href="#" class="tabs__nav__link">
-              <svg class="tabs__nav__icon tabs__nav__icon--3">
-                <use xlink:href="assets/img/sprite.svg#icon-file"></use>
+              <svg class="tabs__nav__icon tabs__nav__icon--1">
+                <use xlink:href="assets/img/sprite.svg#icon-play"></use>
               </svg>
-              <p class="tab-margin tab-width">Asssessment V</p>
+              <p class="tab-font tab-margin tab-width">Conclusion</p>
+              <p class="tab-font auto-margin">00:21</p>
             </a>
           </li>
         </ul>
         <div class="tabs__contents">
-          <div id="tab-1">
-            <div class="tabs__contents__video">
-              <img src="assets/img/play-button(3).svg" alt="play-button" />
-            </div>
+          <div id="tab-1" class="tab-video">
+            <iframe
+              src="https://player.vimeo.com/video/305946089?autoplay=1"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+              class="tabs__contents__video tabs__contents__video--1"
+            ></iframe>
+            <!--
+              <div class="tabs__contents__video">
+                <img src="assets/img/play-button(3).svg" alt="play-button" />
+              </div>
+            -->
           </div>
           <div id="tab-2">
             <div class="tabs__contents__review scrollable2" id="scroller2">
@@ -423,7 +478,9 @@
                 aimed at increasing production to 4 million barrels per day by
                 the year 2010.
               </p>
-              <p class="review-margin3 review-font review-font-end">Click on the next tab to take test</p>
+              <p class="review-margin3 review-font review-font-end">
+                Click on the next tab to take test
+              </p>
             </div>
           </div>
           <div id="tab-3">
@@ -553,15 +610,27 @@
                   <h1 class="congrats-margin congrats-font congrats-font-title">
                     Good job! You are ready to move on to the next lesson.
                   </h1>
-                  <p class=" congrats-margin2 congrats-font">Click on the next tab to continue</p>
+                  <p class=" congrats-margin2 congrats-font">
+                    Click on the next tab to continue
+                  </p>
                 </div>
               </div>
             </div>
           </div>
           <div id="tab-4">
-            <div class="tabs__contents__video">
-              <img src="assets/img/play-button(3).svg" alt="play-button" />
-            </div>
+            <iframe
+              src="https://player.vimeo.com/video/305947788?autoplay=1"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+              class="tabs__contents__video tabs__contents__video--1"
+            ></iframe>
+            <!--
+              <div class="tabs__contents__video">
+                <img src="assets/img/play-button(3).svg" alt="play-button" />
+              </div>
+            -->
           </div>
           <div id="tab-5">
             <div class="tabs__contents__review scrollable2" id="scroller2">
@@ -711,7 +780,9 @@
                 strategic planning for the sale and distribution of finished
                 products.
               </p>
-              <p class="review-margin3 review-font review-font-end">Click on the next tab to take test</p>
+              <p class="review-margin3 review-font review-font-end">
+                Click on the next tab to take test
+              </p>
             </div>
           </div>
           <div id="tab-6">
@@ -832,17 +903,25 @@
                 <div class="tabs__contents__test__answer">
                   <p class="answer_show answer-font"></p>
                 </div>
-                <button class="f btn btn__finish" onclick="nextQuestion(2,3)">Finish test</button>
+                <button class="f btn btn__finish" onclick="nextQuestion(2,3)">
+                  Finish test
+                </button>
               </div>
             </div>
             <div id="q-4" class="l2q4">
               <div class="purple-bg tabs__contents__test">
-                <img src="assets/img/medal.svg" alt="Medal" class="tabs__contents__test__medal" />
+                <img
+                  src="assets/img/medal.svg"
+                  alt="Medal"
+                  class="tabs__contents__test__medal"
+                />
                 <div class="center-text">
                   <h1 class="congrats-margin congrats-font congrats-font-title">
                     Good job! You are ready to move on to the next lesson.
                   </h1>
-                  <p class=" congrats-margin2 congrats-font">Click on the next tab to continue</p>
+                  <p class=" congrats-margin2 congrats-font">
+                    Click on the next tab to continue
+                  </p>
                 </div>
               </div>
             </div>
@@ -900,7 +979,9 @@
                 would indicate if the necessary mineralising event associated
                 with ore, has occurred.
               </p>
-              <p class="review-margin3 review-font review-font-end">Click on the next tab to take test</p>
+              <p class="review-margin3 review-font review-font-end">
+                Click on the next tab to take test
+              </p>
             </div>
           </div>
           <div id="tab-9">
@@ -1030,17 +1111,25 @@
                     potential for oil and gas formations
                   </p>
                 </button>
-                <button class="f btn btn__finish" onclick="nextQuestion(3,3)">Finish test</button>
+                <button class="f btn btn__finish" onclick="nextQuestion(3,3)">
+                  Finish test
+                </button>
               </div>
             </div>
             <div id="q-4" class="l3q4">
               <div class="purple-bg tabs__contents__test">
-                <img src="assets/img/medal.svg" alt="Medal" class="tabs__contents__test__medal" />
+                <img
+                  src="assets/img/medal.svg"
+                  alt="Medal"
+                  class="tabs__contents__test__medal"
+                />
                 <div class="center-text">
                   <h1 class="congrats-margin congrats-font congrats-font-title">
                     Good job! You are ready to move on to the next lesson.
                   </h1>
-                  <p class=" congrats-margin2 congrats-font">Click on the next tab to continue</p>
+                  <p class=" congrats-margin2 congrats-font">
+                    Click on the next tab to continue
+                  </p>
                 </div>
               </div>
             </div>
@@ -1097,7 +1186,9 @@
                 petroleum from the specified area and is granted for a maximum
                 period of 20 years.
               </p>
-              <p class="review-margin3 review-font review-font-end">Click on the next tab to take test</p>
+              <p class="review-margin3 review-font review-font-end">
+                Click on the next tab to take test
+              </p>
             </div>
           </div>
           <div id="tab-12">
@@ -1217,17 +1308,25 @@
                 <div class="tabs__contents__test__answer">
                   <p class="answer_show answer-font"></p>
                 </div>
-                <button class="f btn btn__finish" onclick="nextQuestion(4,3)">Finish test</button>
+                <button class="f btn btn__finish" onclick="nextQuestion(4,3)">
+                  Finish test
+                </button>
               </div>
             </div>
             <div id="q-4" class="l4q4">
               <div class="purple-bg tabs__contents__test">
-                <img src="assets/img/medal.svg" alt="Medal" class="tabs__contents__test__medal" />
+                <img
+                  src="assets/img/medal.svg"
+                  alt="Medal"
+                  class="tabs__contents__test__medal"
+                />
                 <div class="center-text">
                   <h1 class="congrats-margin congrats-font congrats-font-title">
                     Good job! You are ready to move on to the next lesson.
                   </h1>
-                  <p class=" congrats-margin2 congrats-font">Click on the next tab to continue</p>
+                  <p class=" congrats-margin2 congrats-font">
+                    Click on the next tab to continue
+                  </p>
                 </div>
               </div>
             </div>
@@ -1367,7 +1466,9 @@
                 (KRPC).
               </p>
 
-              <p class="review-margin3 review-font review-font-end">Click on the next tab to take test</p>
+              <p class="review-margin3 review-font review-font-end">
+                Click on the next tab to take test
+              </p>
             </div>
           </div>
           <div id="tab-15">
@@ -1479,17 +1580,25 @@
                 <div class="tabs__contents__test__answer">
                   <p class="answer_show answer-font"></p>
                 </div>
-                <button class="f btn btn__finish" onclick="nextQuestion(5,3)">Finish test</button>
+                <button class="f btn btn__finish" onclick="nextQuestion(5,3)">
+                  Finish test
+                </button>
               </div>
             </div>
             <div id="q-4" class="l5q4">
               <div class="purple-bg tabs__contents__test">
-                <img src="assets/img/medal.svg" alt="Medal" class="tabs__contents__test__medal" />
+                <img
+                  src="assets/img/medal.svg"
+                  alt="Medal"
+                  class="tabs__contents__test__medal"
+                />
                 <div class="center-text">
                   <h1 class="congrats-margin congrats-font congrats-font-title">
                     Good job! You are ready to move on to the next lesson.
                   </h1>
-                  <p class=" congrats-margin2 congrats-font">Click on the next tab to continue</p>
+                  <p class=" congrats-margin2 congrats-font">
+                    Click on the next tab to continue
+                  </p>
                 </div>
               </div>
             </div>
@@ -1528,7 +1637,9 @@
                 remaining profit oil is shared between NNPC and the oil company
                 based on an agreed percentage split.
               </p>
-              <p class="review-margin3 review-font review-font-end">Click on the next tab to take test</p>
+              <p class="review-margin3 review-font review-font-end">
+                Click on the next tab to take test
+              </p>
             </div>
           </div>
           <div id="tab-18">
@@ -1651,17 +1762,25 @@
                 <div class="tabs__contents__test__answer">
                   <p class="answer_show answer-font"></p>
                 </div>
-                <button class="f btn btn__finish" onclick="nextQuestion(6,3)">Finish test</button>
+                <button class="f btn btn__finish" onclick="nextQuestion(6,3)">
+                  Finish test
+                </button>
               </div>
             </div>
             <div id="q-4" class="l6q4">
               <div class="purple-bg tabs__contents__test">
-                <img src="assets/img/medal.svg" alt="Medal" class="tabs__contents__test__medal" />
+                <img
+                  src="assets/img/medal.svg"
+                  alt="Medal"
+                  class="tabs__contents__test__medal"
+                />
                 <div class="center-text">
                   <h1 class="congrats-margin congrats-font congrats-font-title">
                     Good job! You are ready to move on to the next lesson.
                   </h1>
-                  <p class=" congrats-margin2 congrats-font">Click on the next tab to continue</p>
+                  <p class=" congrats-margin2 congrats-font">
+                    Click on the next tab to continue
+                  </p>
                 </div>
               </div>
             </div>
@@ -1702,7 +1821,9 @@
                 receipts (after deductions of subsidy and JV cash calls, etc) of
                 crude oil payments in Naira.
               </p>
-              <p class="review-margin3 review-font review-font-end">Click on the next tab to take test</p>
+              <p class="review-margin3 review-font review-font-end">
+                Click on the next tab to take test
+              </p>
             </div>
           </div>
           <div id="tab-21">
@@ -1815,17 +1936,25 @@
                 <div class="tabs__contents__test__answer">
                   <p class="answer_show answer-font"></p>
                 </div>
-                <button class="f btn btn__finish" onclick="nextQuestion(7,3)">Finish test</button>
+                <button class="f btn btn__finish" onclick="nextQuestion(7,3)">
+                  Finish test
+                </button>
               </div>
             </div>
             <div id="q-4" class="l7q4">
               <div class="purple-bg tabs__contents__test">
-                <img src="assets/img/medal.svg" alt="Medal" class="tabs__contents__test__medal" />
+                <img
+                  src="assets/img/medal.svg"
+                  alt="Medal"
+                  class="tabs__contents__test__medal"
+                />
                 <div class="center-text">
                   <h1 class="congrats-margin congrats-font congrats-font-title">
                     Good job! You are ready to move on to the next lesson.
                   </h1>
-                  <p class=" congrats-margin2 congrats-font">Click on the next tab to continue</p>
+                  <p class=" congrats-margin2 congrats-font">
+                    Click on the next tab to continue
+                  </p>
                 </div>
               </div>
             </div>
@@ -1899,7 +2028,9 @@
                   </p>
                 </li>
               </ol>
-              <p class="review-margin3 review-font review-font-end">Click on the next tab to take test</p>
+              <p class="review-margin3 review-font review-font-end">
+                Click on the next tab to take test
+              </p>
             </div>
           </div>
           <div id="tab-24">
@@ -1974,17 +2105,25 @@
                 <div class="tabs__contents__test__answer">
                   <p class="answer_show answer-font"></p>
                 </div>
-                <button class="f btn btn__finish" onclick="nextQuestion(8,2)">Finish test</button>
+                <button class="f btn btn__finish" onclick="nextQuestion(8,2)">
+                  Finish test
+                </button>
               </div>
             </div>
             <div id="q-3" class="l8q3">
               <div class="purple-bg tabs__contents__test">
-                <img src="assets/img/medal.svg" alt="Medal" class="tabs__contents__test__medal" />
+                <img
+                  src="assets/img/medal.svg"
+                  alt="Medal"
+                  class="tabs__contents__test__medal"
+                />
                 <div class="center-text">
                   <h1 class="congrats-margin congrats-font congrats-font-title">
                     Good job! You are ready to move on to the next lesson.
                   </h1>
-                  <p class=" congrats-margin2 congrats-font">Click on the next tab to continue</p>
+                  <p class=" congrats-margin2 congrats-font">
+                    Click on the next tab to continue
+                  </p>
                 </div>
               </div>
             </div>
@@ -2075,7 +2214,9 @@
                   </p>
                 </li>
               </ol>
-              <p class="review-margin3 review-font review-font-end">Click on the next tab to take test</p>
+              <p class="review-margin3 review-font review-font-end">
+                Click on the next tab to take test
+              </p>
             </div>
           </div>
           <div id="tab-27">
@@ -2202,17 +2343,25 @@
                 <div class="tabs__contents__test__answer">
                   <p class="answer_show answer-font"></p>
                 </div>
-                <button class="f btn btn__finish" onclick="nextQuestion(9,3)">Finish test</button>
+                <button class="f btn btn__finish" onclick="nextQuestion(9,3)">
+                  Finish test
+                </button>
               </div>
             </div>
             <div id="q-4" class="l9q4">
               <div class="purple-bg tabs__contents__test">
-                <img src="assets/img/medal.svg" alt="Medal" class="tabs__contents__test__medal" />
+                <img
+                  src="assets/img/medal.svg"
+                  alt="Medal"
+                  class="tabs__contents__test__medal"
+                />
                 <div class="center-text">
                   <h1 class="congrats-margin congrats-font congrats-font-title">
                     Good job! You are ready to move on to the next lesson.
                   </h1>
-                  <p class=" congrats-margin2 congrats-font">Click on the next tab to continue</p>
+                  <p class=" congrats-margin2 congrats-font">
+                    Click on the next tab to continue
+                  </p>
                 </div>
               </div>
             </div>
@@ -2317,7 +2466,9 @@
                 A Water Use Permit confers on its holder, the right to obtain
                 and use water for its exploration and mining operations.
               </p>
-              <p class="review-margin3 review-font review-font-end">Click on the next tab to take test</p>
+              <p class="review-margin3 review-font review-font-end">
+                Click on the next tab to take test
+              </p>
             </div>
           </div>
           <div id="tab-30">
@@ -2428,17 +2579,25 @@
                 <div class="tabs__contents__test__answer">
                   <p class="answer_show answer-font"></p>
                 </div>
-                <button class="f btn btn__finish" onclick="nextQuestion(10,3)">Finish test</button>
+                <button class="f btn btn__finish" onclick="nextQuestion(10,3)">
+                  Finish test
+                </button>
               </div>
             </div>
             <div id="q-4" class="l10q4">
               <div class="purple-bg tabs__contents__test">
-                <img src="assets/img/medal.svg" alt="Medal" class="tabs__contents__test__medal" />
+                <img
+                  src="assets/img/medal.svg"
+                  alt="Medal"
+                  class="tabs__contents__test__medal"
+                />
                 <div class="center-text">
                   <h1 class="congrats-margin congrats-font congrats-font-title">
                     Good job! You are ready to move on to the next lesson.
                   </h1>
-                  <p class=" congrats-margin2 congrats-font">Click on the next tab to continue</p>
+                  <p class=" congrats-margin2 congrats-font">
+                    Click on the next tab to continue
+                  </p>
                 </div>
               </div>
             </div>
@@ -2657,14 +2816,27 @@
                   </p>
                 </li>
               </ul>
-              <p class="review-margin3 review-font review-font-end">Click on the next tab to take test</p>
+              <p class="review-margin3 review-font review-font-end">
+                Click on the next tab to take test
+              </p>
             </div>
           </div>
-          <div id="tab-33"></div>
+          <!-- <div id="tab-33"></div> -->
           <div id="tab-34">
-            <div class="tabs__contents__video">
-              <img src="assets/img/play-button(3).svg" alt="play-button" />
-            </div>
+            <iframe
+              src="https://player.vimeo.com/video/305937656?autoplay=1"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+              class="tabs__contents__video tabs__contents__video--1"
+            >
+            </iframe>
+            <!--
+              <div class="tabs__contents__video">
+                <img src="assets/img/play-button(3).svg" alt="play-button" />
+              </div>
+            -->
           </div>
           <div id="tab-35">
             <div class="tabs__contents__review scrollable2" id="scroller2">
@@ -2758,15 +2930,52 @@
                 optimizing current operations. All mining now has to be cost and
                 process efficient.
               </p>
-              <p class="review-margin3 review-font review-font-end">Click on the next tab to take test</p>
+              <p class="review-margin3 review-font review-font-end">
+                Click on the next tab to take test
+              </p>
             </div>
           </div>
-          <div id="tab-36"></div>
+          <!-- <div id="tab-36"></div> -->
+          <div id="tab-37">
+            <iframe
+              src="https://player.vimeo.com/video/305937656?autoplay=1"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+              class="tabs__contents__video tabs__contents__video--1"
+            >
+            </iframe>
+          </div>
         </div>
 
         <script src="assets/js/jquery.min.js"></script>
 
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <!--
+          <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        -->
+
+        <script>
+          // When the user scrolls down 20px from the top of the document, slide down the navbar
+
+          window.onscroll = function() {
+            scrollFunction();
+          };
+
+          function scrollFunction() {
+            var elmnt = document.getElementById("scroller");
+
+            if (
+              document.elmnt.scrollTop > 20 ||
+              document.documentElement.scrollTop > 20
+            ) {
+              document.getElementById("menu").style.display = "block";
+              console.log("am a boy");
+            } else {
+              document.getElementById("menu").style.display = "none";
+            }
+          }
+        </script>
 
         <script>
           $.fn.tabs = function() {
@@ -2819,9 +3028,10 @@
               e.target.parentElement.style.animation = "red-flash .4s linear 3";
               e.target.parentElement.parentElement.querySelector(
                 "p.answer_show"
-              ).innerText = e.target.parentElement.parentElement.querySelector(
-                "p.correct"
-              ).innerText;
+              ).innerText = `The answer is ${
+                e.target.parentElement.parentElement.querySelector("p.correct")
+                  .innerText
+              }`;
             } else if (
               e.target.nodeName === "P" &&
               e.target.parentElement.id === "correct"
@@ -2840,9 +3050,9 @@
               e.target.style.animation = "red-flash .4s linear 3";
               e.target.parentElement.querySelector(
                 "p.answer_show"
-              ).innerText = e.target.parentElement.querySelector(
-                "p.correct"
-              ).innerText;
+              ).innerText = `The answer is ${
+                e.target.parentElement.querySelector("p.correct").innerText
+              }`;
             } else if (e.target.id === "correct") {
               console.log(e);
               e.target.style.animation = "green-flash .4s linear 3 forwards";
@@ -2859,6 +3069,53 @@
               changeHandler(e);
             });
           });
+        </script>
+
+        <script>
+          var checkbox = document.querySelector(
+            "input.tabs__nav__item__checkbox"
+          );
+          var tabClosed = document.querySelector(".tabs__nav");
+          var contents = document.querySelector(".tabs__contents");
+          // console.log(tab-video);
+
+          checkbox.onchange = function(e) {
+            // console.log(e.target.checked);
+            if (e.target.checked == true) {
+              tabClosed.className += " close";
+              contents.className += " video-closed";
+              tabClosed.classList.remove("open");
+              contents.classList.remove("video-open");
+            } else if (e.target.checked == false) {
+              tabClosed.classList.remove("close");
+              contents.classList.remove("video-closed");
+              tabClosed.className += " open";
+              contents.className += " video-open";
+            }
+            console.log(tabClosed.className);
+            // console.log(e.target.value);
+          };
+        </script>
+
+        <script>
+          var prevScrollpos = window.pageYOffset;
+          window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+              document.getElementById("menu").style.display = "block";
+            } else {
+              document.getElementById("menu").style.display = "none";
+            }
+            prevScrollpos = currentScrollPos;
+          };
+
+          function myFunction(event) {
+            if (event.scrollTop > 44) {
+              document.getElementById("menu").style.display = "none";
+            } else if (event.scrollTop < 43) {
+              document.getElementById("menu").style.display = "block";
+            }
+          }
         </script>
       </div>
     </section>
