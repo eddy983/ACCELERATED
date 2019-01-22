@@ -492,6 +492,7 @@
                 <p class="test-title-margin test-font test-font-title">
                   Who discovered crude oil in Nigeria ?
                 </p>
+<<<<<<< HEAD
 
                 <button id="wrong" class="answer tabs__contents__test__tab">
                   <p class="test-font">National Petroleum Company (NNPC)</p>
@@ -513,6 +514,29 @@
 
                 <div class="tabs__contents__test__answer">
                   <p class="answer_show answer-font"></p>
+=======
+                <div class="boy">
+                  <input type="radio" name="tab" id="wrong" value="wrong" ">
+                  <label for="wrong"  class="a wrong tabs__contents__test__tab" >
+                    <p class="test-font">National Petroleum Company (NNPC)</p>
+                  </label>
+                  <input type="radio" name="tab" id="wrong2" value="wrong" ">
+                  <label for="wrong2" class="a tabs__contents__test__tab" ">
+                    <p class="test-font">Shell Petroleum Development Corporation</p>
+                  </label>
+                  <input type="radio" name="tab" id="correct" value="correct" ">
+                  <label for="correct" id="correct" class="b correct tabs__contents__test__tab" >
+                    <p class="test-font">Shell D’Arcy Petroleum</p>
+                  </label>
+                  <input type="radio" name="tab" id="wrong3" value="wrong" ">
+                  <label for="wrong3" class="a tabs__contents__test__tab" ">
+                    <p class="test-font">Oloibiri</p>
+                  </label>
+                  
+                  <p class="z" hidden>Shell D’Arcy Petroleum</p>  
+                  
+                  <button enabled class="f enable btn btn__finish" onclick="questionTwo()">Next</button>
+>>>>>>> bf7f8df899c5b33ce6507b2bf67ea6b787585084
                 </div>
 
                 <button
@@ -524,7 +548,11 @@
                 </button>
               </div>
             </div>
+<<<<<<< HEAD
             <div id="q-2" class="l1q2">
+=======
+            <div id="q-2">
+>>>>>>> bf7f8df899c5b33ce6507b2bf67ea6b787585084
               <div class="tabs__contents__test">
                 <p class="test-header-margin test-font test-font-header">
                   Question 2/3
@@ -3062,6 +3090,7 @@
             }
           }
 
+<<<<<<< HEAD
           var inputs = Array.from(document.querySelectorAll("button"));
 
           inputs.forEach(function(input) {
@@ -3108,6 +3137,41 @@
             }
             prevScrollpos = currentScrollPos;
           };
+=======
+    <script>
+      function changeHandler (e) {
+        console.log(e.target.value);
+        if (e.target.value === "wrong") {
+          console.log(e.target.parentElement);
+          console.log(e);
+          console.log(e.target.parentElement.querySelector('.f'));
+          // e.target.parentElement.querySelector('.f').style.opacity = '1';
+          e.target.nextElementSibling.style.animation = "red-flash .4s linear 3 forwards"; 
+          
+          // e.target.nextElementSibling.style.cursor = "pointer"; 
+
+          // $(".btn__finish").css("opacity", "1");
+          // $(".btn__finish").css("cursor", "pointer");
+          // $(".btn__finish").css("pointer-events", "unset"); 
+          // e.target.nextElementSibling.style.cursor = "pointer"; 
+          // e.target.nextElementSibling.style.pointerEvents = "unset"; 
+          // e.target.nextElementSibling.style.opacity = "1"; 
+          // console.log(e.target.parentElement.querySelector('.f'))
+        } 
+        else {
+          console.log(e);
+          e.target.parentElement.querySelector('.f').className += ' btn__abled';
+          e.target.parentElement.querySelector('.z').setAttribute('hidden', true);
+          e.target.parentElement.querySelector('.b').style.animation = "green-flash .4s linear 3 forwards";
+          e.target.parentElement.querySelector('.f').classList.add(".g");  
+        }
+      };
+  
+      var inputs = Array.from(document.querySelectorAll('input[type="radio"]'));
+      inputs.forEach(function(input){
+        input.addEventListener("change", changeHandler);
+      });
+>>>>>>> bf7f8df899c5b33ce6507b2bf67ea6b787585084
 
           function myFunction(event) {
             if (event.scrollTop > 44) {
